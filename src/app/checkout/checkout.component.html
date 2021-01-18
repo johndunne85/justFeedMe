@@ -1,0 +1,81 @@
+<div class="card textcenter mt-3" [ngClass]="{'add-appointment': showForm}">
+  <div class="apt-addheading card-header text-white">
+     Customer Information
+  </div><!-- card-header -->
+
+  <div class="card-body">
+
+    <form id="aptForm" novalidate
+    (ngSubmit)="handleForm(infoForm.value)"
+    #infoForm="ngForm">
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label text-md-right" for="name">Name:</label>
+        <div class="col-md-5">
+          <input type="text" pattern="[a-zA-Z ']*" minlength="2" required class="form-control" name="name" id="name" #name="ngModel" ngModel>
+           <span *ngIf="name.invalid && name.touched"  class="error">Name field is required.</span>
+        </div><!-- col-md-10 -->
+      </div><!-- form-group -->
+
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label text-md-right"
+          for="ownerName">Address:</label>
+        <div class="col-md-5">
+          <input type="text" #address1="ngModel" minlength="10" required class="form-control" name="address1"
+            id="address1" ngModel>
+            <span *ngIf="address1.invalid && address1.touched"  class="error">Address field must be at least 10 characters long.</span>
+        </div><!-- col-md-10 -->
+      </div><!-- form-group -->
+
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label text-md-right"
+          for="ownerName">Address:</label>
+        <div class="col-md-5">
+          <input type="text" class="form-control" name="address2"
+            id="address2" ngModel>
+        </div><!-- col-md-10 -->
+      </div><!-- form-group -->
+
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label text-md-right"
+          for="ownerName">County:</label>
+        <div class="col-md-5">
+          <select type="text" #county="ngModel" required class="form-control" name="county"
+            id="county" ngModel>
+            <option>Dublin</option>
+            <option>Kildare</option>
+            <option>Meath</option>
+          </select>
+        </div><!-- col-md-10 -->
+      </div><!-- form-group -->
+
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label text-md-right" for="aptDate">Mobile:</label>
+        <div class="col-md-3">
+          <input type="mobile" pattern="[0-9 ]*" minlength="7" #mobile="ngModel" required class="form-control" id="aptDate" name="mobile" ngModel>
+          <span *ngIf="mobile.invalid && mobile.touched"  class="error">Valid mobile number is required.</span>
+        </div><!-- col-md-4 -->
+      </div><!-- form-group -->
+
+      <div class="form-group form-row">
+        <label class="col-md-2 text-md-right" for="aptNotes">Note for Restaurant:</label>
+        <div class="col-md-5">
+          <textarea class="form-control" rows="4" cols="50"
+            name="note" id="note" placeholder="Leave a note for the restaurant with anything they need to know." ngModel></textarea>
+        </div><!-- col-md-10 -->
+      </div><!-- form-group -->
+
+      <div class="form-group form-row mb-0">
+        <div class="offset-md-2 col-md-10">
+          <button [disabled]="infoForm.invalid" type="submit" class="btn btn-primary d-block ml-auto"
+          (click)="toggleForm()">Confirm Order</button>
+        </div><!-- col-md-offset-2 -->
+      </div><!-- form-group -->
+
+    </form>
+
+  </div><!-- card-body -->
+</div><!-- card-primary -->
+<app-purchase [purchaseForm]="showFormPurchase"
+              [orderInformation]="data"
+              [total]="totalPrice"
+              [customerInfo]="tempAddress"></app-purchase >

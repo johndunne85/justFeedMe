@@ -1,0 +1,7 @@
+<div class="form-check " *ngFor="let item of cuisineList">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
+  (click)="filterCuisine(item.cuisines)">
+  <label class="form-check-label" for="defaultCheck1">
+    {{item.cuisines}} (1)
+  </label>
+</div>

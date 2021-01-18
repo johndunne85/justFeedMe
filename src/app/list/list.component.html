@@ -1,0 +1,56 @@
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right bg-white" id="sidebar-wrapper">
+    <div class="sidebar-heading">Cuisines</div>
+    <div class="list-group list-group-flush">
+
+<app-cuisine-search [cuisineList]="theList" (filterCuisineEvt)="filterList($event)"></app-cuisine-search>
+</div>
+ </div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="page-content-wrapper">
+<div class="appointment-list item-list mb-3">
+  <div class="pet-item col media py-3 bg-white" *ngFor="let item of modifiedList">
+
+    <div class="mr-3">
+      <a routerLink="/details/{{item.id}}">
+      <img src="../assets/{{item.imageName}}" width="170" height="120">
+    </a>
+    <!-- <button class="pet-delete btn btn-sm btn-danger">+</button> -->
+    </div><!-- media-left -->
+
+    <div class="pet-info media-body">
+      <div class="pet-head d-flex">
+          <a routerLink="/details/{{item.id}}">
+        <span class="pet-name">{{item.restaurantName}}</span>
+      </a>
+        <span class="apt-date ml-auto">Opens at {{item.opens}}</span>
+      </div><!-- pet-head -->
+
+      <div class="owner-name">
+        <span class="label-item"></span>
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star notchecked"></span>
+
+
+        <span>({{item.numberStars}})</span>
+      </div>
+      <div class="apt-notes" ><strong>{{item.cuisines}}</strong></div>
+    </div><!-- pet-info -->
+
+  </div><!-- pet-item -->
+
+</div><!-- appointment-list -->
+
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>

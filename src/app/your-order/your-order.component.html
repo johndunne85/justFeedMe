@@ -1,0 +1,14 @@
+<div class="col-25 bg-white">
+   <div class="container">
+     <a routerLink="/checkout" [state]="{ data: listOfItemsBought}" *ngIf="!basketIsEmpty && ingageCheckOut">
+     <input type="submit" value="Checkout" class="btn">
+   </a>
+     <p> <a class="link">If you or someone you're ordering for has a food allergy or intolerance, please phone the restaurant on 555 5555.</a></p>
+     <span><input type="submit" value="Delivery" class="btn2" (click)="deliveryClick()" [ngClass]="{'highlight-button': deliveryPressed}"></span>
+     <span><input type="submit" value="Collection" class="btn2" (click)="collectClick()" [ngClass]="{'highlight-button': CollectionPressed}"></span>
+     <p *ngFor="let item of listOfItemsBought">{{item[0]}} <span class="price">{{item[1] | currency: '€'}}<button *ngIf="item[0] !== 'Delivery'" class="pet-delete1 btn-sm btn-danger" (click)="deleteItem(item)"><strong>x</strong></button></span></p>
+
+     <hr>
+     <p>Total <span class="price" style="color:black"><b>{{totalCost | currency:'€'}}</b></span></p>
+   </div>
+ </div>

@@ -1,0 +1,154 @@
+
+[
+  {
+    "id": "1",
+    "restaurantName": "Supermac's",
+    "imageName": "supermacs.jpg",
+    "cuisines":  "Burgers, Irish",
+    "opens": "12:00",
+    "numberStars": 16,
+    "categories": [
+        ["Burgers", 0],
+        ["5oz Beef Burger", 6.40,"654 Kcal"],
+        ["5oz Bacon & Cheeseburger", 6.40,"596 Kcal"],
+        ["7.5oz Burger", 7.80,"412 Kcal"],
+        ["Mighty Mac Burger", 5.10,"480 Kcal"],
+        ["Smokey Bacon Burger", 5.10,"568 Kcal"],
+        ["Cheeseburger", 2.7,"367 Kcal"],
+        ["Veggie Burger", 5.50,"412 Kcal"],
+        ["Chicken", 0],
+        ["Chicken Breast Sandwich", 6.4,"384 Kcal"],
+        ["Chicken Burger", 4.9,"452 Kcal"],
+        ["Chicken Wrap", 4.95,"432 Kcal"],
+        ["Chicken Snack Box", 7.5,"750 Kcal"],
+        ["Fries", 0],
+        ["Fries", 3.80,"353 Kcal"],
+        ["Curry Fries", 4.95,"384 Kcal"],
+        ["Taco Fries", 5.60,"601 Kcal"]
+      ]
+  },
+  {
+    "id": "2",
+    "restaurantName": "Besburritos",
+    "imageName": "besburritos.jpg",
+    "cuisines":  "Mexican",
+    "opens": "17:00",
+    "numberStars": 13,
+    "categories": [
+      ["Appetisers", 0],
+        ["Fried Vegetarian Mix", 7.5],
+        ["Samosa", 10.15],
+        ["Spicy Potato Cakes", 6.40],
+        ["Tandoori Dishes", 0],
+        ["Classic Tikka Masala", 10.95,"Old favourite, creamy mild tomato sauce with light spiced curry"],
+        ["Korma",11.85,"Very mild creamy curry with almonds & coconut"],
+        ["Makhani", 12.70,"Cooked in tomato & creamy sauce with butter"],
+        ["Vindaloo", 10.95,"Classic Indian dish cooked with fairly spicy hot curry"],
+        ["Chef's Special",0],
+        ["Tikka Biryani",11.95,"A choice of chicken tikka OR lamb tikka"],
+        ["Biryani",12.10,"A rich delicacy from India, basmati rice, flavoured saffron"],
+        ["Soft Drinks",0],
+        ["Club Orange",1.50],
+        ["Coca-Cola",1.50]
+      ]
+},  {
+    "id": "3",
+    "restaurantName": "Papa John's",
+    "imageName": "papajohns.jpg",
+    "cuisines":  "Pizza, Irish",
+    "opens": "12:00",
+    "numberStars": 19,
+    "categories": [
+      ["Papa's Classic Pizzas",0],
+        ["BBQ Chicken",16,"Chargrilled chicken, crispy bacon, onions, BBQ sauce topping & mozzarella cheese"],
+        ["All The Meats", 16,"Pepperoni, ham, crispy bacon, Italian sausage, spicy beef & mozzarella cheese"],
+        ["Hot Pepper Passion",16.15,"Red peppers, green peppers, sweetcorn, green chillies, jalapeno peppers & mozzarella cheese"],
+        ["The Works",17.90,"Pepperoni, ham, Italian sausage, mushrooms, black olives, green peppers, onions & mozzarella cheese"],
+        ["Chicken Club",16.50,"Chicken, onion, bacon, fresh tomato & mozzarella cheese"],
+        ["Papa's Sides",0],
+        ["Garlic Pizza Bread",5.50,"10\" Pizza base with lashings of garlic & herb butter"],
+        ["Chicken Dippers", 6.95,"5 Southern fried breaded chicken pieces served with 2 Papa’s dips"],
+        ["Dippers & Wedges Combo",8.50,"5 Southern fried breaded chicken pieces with a portion of oven baked crispy wedges served with 2 Papa’s dips"],
+        ["Soft Drinks",0],
+        ["Club Orange",1.50],
+        ["Coca-Cola",1.50]
+      ]
+  },
+  {
+    "id": "4",
+    "restaurantName": "Fusion Restaurant",
+    "imageName": "fusionrestaurant.jpg",
+    "cuisines":  "Indian",
+    "opens": "16:30",
+    "numberStars": 57,
+      "categories": [
+        ["Appetisers", 0],
+          ["Fried Vegetarian Mix", 7.5],
+          ["Samosa", 10.15],
+          ["Spicy Potato Cakes", 6.40],
+          ["Tandoori Dishes", 0],
+          ["Classic Tikka Masala", 10.95,"Old favourite, creamy mild tomato sauce with light spiced curry"],
+          ["Korma",11.85,"Very mild creamy curry with almonds & coconut"],
+          ["Makhani", 12.70,"Cooked in tomato & creamy sauce with butter"],
+          ["Vindaloo", 10.95,"Classic Indian dish cooked with fairly spicy hot curry"],
+          ["Chef's Special",0],
+          ["Tikka Biryani",11.95,"A choice of chicken tikka OR lamb tikka"],
+          ["Biryani",12.10,"A rich delicacy from India, basmati rice, flavoured saffron"],
+          ["Soft Drinks",0],
+          ["Club Orange",1.50],
+          ["Coca-Cola",1.50]
+        ]
+    },
+    {
+      "id": "5",
+      "restaurantName": "Orient Restaurant",
+      "imageName": "sushi.jpg",
+      "cuisines":  "Asian fusion, Japanese",
+      "opens": "16:30",
+      "numberStars": 37,
+        "categories": [
+          ["Sushi Rolls", 0],
+            ["Smoked Salmon Cheese Roll", 7.5,"Smoked salmon & cream cheese"],
+            ["California Roll ", 6.15,"Crab meat, avocado & mayo"],
+            ["Salmon Avocado Roll", 6.40,"Fresh salmon, avocado & mayo"],
+            ["Spicy Salmon Roll ", 7.25,"Homemade spicy sauces with salmon & cucumber"],
+            ["Vegetarian California Roll", 5.95,"Inari, avocado, cucumber & yellow pickle"],
+            ["Prawn Avocado Roll",8.00],
+            ["Yakisoba", 12.70,"Stir-fried egg noodles with chicken & garnished with yellow pickle"],
+            ["Seafood Yakisoba", 10.95,"Stir-fried egg noodles with squid, mussel, crab stick & prawn"],
+            ["Sides",0],
+            ["Egg Fried Rice",2.95],
+            ["Noodles",3.10],
+            ["Soft Drinks",0],
+            ["Club Orange",1.50],
+            ["Coca-Cola",1.50]
+          ]
+      },
+      {
+        "id": "6",
+        "restaurantName": "Bangkook",
+        "imageName": "thai-food.jpg",
+        "cuisines":  "Asian fusion, Thai",
+        "opens": "16:30",
+        "numberStars": 57,
+          "categories": [
+            ["Curry Dishes", 0],
+              ["Thai Chilli & Lime Chicken", 11.5],
+              ["Kung Po Beef", 10.15],
+              ["Black Pepper", 11.40],
+              ["Cashew Nuts Chicken", 10.30],
+              ["Cashew Nuts Prawn", 10.95],
+              ["Sweet Chilli & Basil Chicken",12.00],
+              ["Malaysian Satay Beef", 12.70],
+              ["Wok Stir Fry Chicken", 11.95],
+              ["Sides",0],
+              ["Egg Fried Rice",2.95],
+              ["Noodles",12.10],
+              ["Soft Drinks",0],
+              ["Club Orange",1.50],
+              ["Coca-Cola",1.50]
+            ]
+        }
+
+
+]

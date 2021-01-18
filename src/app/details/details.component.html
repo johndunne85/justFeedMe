@@ -1,0 +1,50 @@
+<div class="d-flex" id="wrapper" >
+
+  <div id="page-content-wrapper">
+
+
+<app-search (queryEvt)="searchApt($event)"></app-search>
+<div class="appointment-list item-list mb-3 bg-white">
+  <div class="pet-item col media py-3" *ngFor="let s of modifiedList">
+    <div class="mr-3">
+
+    </div><!-- media-left -->
+
+    <div class="pet-info media-body" >
+      <div class="pet-head d-flex" >
+        <span class="pet-name" >{{s[0]}} </span>
+        <span class="ml-auto">
+        <span class="price ml-auto" *ngIf="s[1] > 0">{{s[1] | currency: '€'}} </span>
+        <button class="pet-delete btn btn-md" *ngIf="s[1] > 0" (click)="addToCart(s)"><strong>+</strong></button>
+      </span>
+      </div><!-- pet-head -->
+
+      <div class="owner-name">
+        <span >{{s[2]}}</span>
+      </div>
+    </div><!-- pet-info -->
+  </div><!-- pet-item -->
+</div><!-- appointment-list -->
+
+</div>
+
+<!-- Sidebar -->
+<div class="bg-light" id="sidebar-wrapper">
+
+  <div class="list-group list-group-flush">
+
+<app-your-order [listOfItemsBought]="itemsBoughtArray"
+                [totalCost]="totalPrice"
+                [basketIsEmpty]="basketEmpty"
+                (deliveryEvt)="addDelivery()"
+                (collectEvt)="addCollect()"
+                (deleteItemEvt)="deleteThisItem($event)"
+                ></app-your-order>
+
+</div>
+
+
+
+
+</div> <!-- wrapper -->
+</div>

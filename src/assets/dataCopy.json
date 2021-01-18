@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "restaurantName": "Supermac's",
+    "imageName": "supermacs.jpg",
+    "cuisines":  "Burgers, Irish",
+    "opens": "12:00",
+    "numberStars": 16,
+    "categories": [
+        ["Burgers", 0],
+        ["5ozBeefBurger", 0],
+        ["LagegeMeal", 10.15],
+        ["OnItsOwn", 6.40],
+        ["RegularMeal", 9.40],
+        ["Cheeseburger", 0],
+        ["LargeMeal", 6.85],
+        ["OnItsOwn", 2.70],
+        ["RegularMeal", 6.10]
+      ]
+},
+  {
+    "id": "2",
+    "restaurantName": "Besburritos",
+    "imageName": "besburritos.jpg",
+    "cuisines":  "Mexican",
+    "opens": "17:00",
+    "numberStars": 13,
+    "categories": [
+      ["Burgers", 0],
+        ["5ozBeefBurger", 0],
+        ["LagegeMeal", 10.15],
+        ["OnItsOwn", 6.40],
+        ["RegularMeal", 9.40],
+        ["Cheeseburger", 0],
+        ["LargeMeal",6.85],
+        ["OnItsOwn", 2.70],
+        ["RegularMeal", 6.10]
+      ]
+  }
+  ,
+  {
+    "id": "3",
+    "restaurantName": "Fusion Restaurant",
+    "imageName": "fusionrestaurant.jpg",
+    "cuisines":  "Indian",
+    "opens": "16:30",
+    "numberStars": 57,
+    "categories": {
+      "Burgers": {
+        "5ozBeefBurger": 0,
+        "LagegeMeal": 10.15,
+        "OnItsOwn": 6.40,
+        "RegularMeal": 9.40,
+        "Cheeseburger": 0,
+        "LargeMeal": 6.85,
+        "OnItsOwn": 2.70,
+        "RegularMeal": 6.10
+      },
+"Chicken":{
+        "Chicken Breast Sandwich": 0,
+        "Lagege Meal": 6.85,
+        "On Its Own": 2.70,
+        "Regular Meal": 6.10,
+        "Chicken Wrap": 0,
+        "Lagege Meal": 9.85,
+        "On Its Own": 4.70,
+        "Regular Meal": 9.15
+      }
+  }
+  },
+  {
+    "id": "4",
+    "restaurantName": "Papa John's",
+    "imageName": "papajohns.jpg",
+    "cuisines":  "Pizza, Irish",
+    "opens": "12:00",
+    "numberStars": 19,
+    "categories": {
+      "Burgers": {
+        "5ozBeefBurger": 0,
+        "LagegeMeal": 10.15,
+        "OnItsOwn": 6.40,
+        "RegularMeal": 9.40,
+        "Cheeseburger": 0,
+        "LargeMeal": 6.85,
+        "OnItsOwn": 2.70,
+        "RegularMeal": 6.10
+      },
+"Chicken":{
+        "Chicken Breast Sandwich": 0,
+        "Lagege Meal": 6.85,
+        "On Its Own": 2.70,
+        "Regular Meal": 6.10,
+        "Chicken Wrap": 0,
+        "Lagege Meal": 9.85,
+        "On Its Own": 4.70,
+        "Regular Meal": 9.15
+      }
+  }
+  }
+
+]
