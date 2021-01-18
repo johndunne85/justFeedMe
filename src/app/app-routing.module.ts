@@ -11,6 +11,7 @@ const routes: Routes = [
    { path: 'checkout', component: CheckoutComponent }
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
